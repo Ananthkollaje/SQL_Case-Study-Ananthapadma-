@@ -1,0 +1,38 @@
+Table 1: OWNER
+
+Fields:
+1. owner_id - (Primary Key)
+2. owner_name
+3. deptname
+
+
+Table 2: TASK
+
+Fields:
+1. task_id - (Primary Key)
+2. task_name
+3. description
+4. status
+5. priority
+6. created_on
+7. modified_on
+8. owner_id - (Foreign Key)
+
+
+Table 3:TEAM_MEMBERS
+
+Fields:
+1.member_id  - (Primary Key)
+2.member_name
+3.deptname
+4.owner_id - (Foreign Key)
+5.task_id  - (Foreign Key)
+
+Table 4: NOTES
+
+Fields:
+1.notes_id - (Primary Key)
+2.task_id  - (Foreign Key)
+3.owner_id - (Foreign Key)
+4.task_notes
+5.bookmark
